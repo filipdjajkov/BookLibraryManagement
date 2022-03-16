@@ -1,0 +1,121 @@
+:root {
+	--bg: #ecc;
+	--txt: #400;
+	--wndw: #fee;
+}
+
+body{
+	margin:0;
+	padding:0;
+  width: 100%;
+  background-color: var(--bg);
+  color: var(--txt);
+  text-align:center;
+}
+
+select{
+	margin:0 6px 0 0;
+}
+
+#books * {
+	display:inline-block;
+}
+
+label{
+	font-family: mono;
+}
+
+#books > * {
+	width: 180px;
+	padding: 0;
+	margin: 16px;
+	border: 1px solid var(--txt);
+}
+
+a:hover, a:visited, a:link, a:active{
+    text-decoration: none;
+	color: var(--txt);
+}
+
+.bookPreview, #details{
+	background-color: var(--wndw);	
+	padding: 16px;
+}
+
+#details{
+	width: 512px;
+}
+
+.bookPreview{
+	width: calc(100% - 32px);
+}
+
+.bookPreview img{
+	width:100%;
+}
+
+.bookPreview > *{
+	padding:0px;
+	margin:0px;
+}
+
+#booksNumber{
+	position: absolute;
+	bottom: 16px;
+	right: calc(50% - 64px);
+	transform: translate(0,-50%);	
+}
+
+#menu > *{
+	display: inline-block;
+	margin: 0 16px;
+}
+
+#menu{
+	margin: 16px 16px 0;
+}
+
+hr{
+	margin: 0;
+	padding: 0;
+}
+
+
+#details img{
+	width:512px;
+}
+
+#aboutUs, #details, #addBookForm, #books{
+  position: absolute;
+  top: calc(50% + 40px); right: 50%;
+  transform: translate(50%,-50%);	
+}
+
+#menu{
+	margin-left: calc(50%-940px);
+	text-align:center;
+}
+
+#addBookForm,#details, #aboutUs{
+	padding: 32px;	
+	border: 1px solid var(--txt);
+	background-color: var(--wndw);	
+}
+
+#books{
+	padding: 16px;	
+}
+
+#aboutUs{
+	max-width:512px;
+}
+
+#aboutUs img{
+	width:100%;
+}
+
+/*
+#books{
+	min-width:500px;
+	max-width:80%;
+}*/
